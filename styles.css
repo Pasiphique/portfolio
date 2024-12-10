@@ -91,7 +91,6 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 17vh;
-    border:1px solid black;
 }
 .nav-links{
     gap:2rem; 
@@ -131,3 +130,41 @@ nav{
     overflow: hidden;
     transition: all 0.3 ease-in-out;
 }
+.menu-links a{
+    display: block;
+    padding:10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color:rgb(229, 168, 168);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
+    list-style: none;
+    cursor: pointer;
+}
+.menu-links li:hover{
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.menu-links.open{
+    max-height: 300px;
+
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+.hamburger-icon span:first-child{
+    transform: none;
+    opacity: 1;
+}
+
