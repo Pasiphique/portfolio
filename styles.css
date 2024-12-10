@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* Simple Normalize CSS */
+
+html {
+    line-height: 1.15; /* Improve readability of just about everything */
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0; /* Remove the default margin */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Remove the default padding and margin for lists */
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+/* Set a consistent border box model */
+*, *::before, *::after {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Set default font styles */
+body {
+    font-family: sans-serif; /* Use a default sans-serif font */
+    font-size: 16px; /* Set a base font size */
+    line-height: 1.5; /* Set a base line height */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; /* Remove default margins */
+}
+
+/* Links */
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+    cursor: pointer;
+}
+a:hover{
+    color:grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+/* Images */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Button styles */
+button {
+    font-family: inherit; /* Use the same font as the body */
+    font-size: inherit; /* Use the same font size as the body */
+    line-height: inherit; /* Use the same line height as the body */
+}
+
+/* Form elements */
+input, textarea, select, button {
+    font-family: inherit; /* Use the same font as the body */
+    font-size: inherit; /* Use the same font size as the body */
+    line-height: inherit; /* Use the same line height as the body */
+}
+p{
+   color: rgb(85,85,85);
+}
+/* Transtion */
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+nav,
+.nav-links{
+    display: flex;
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    border:1px solid black;
+}
+.nav-links{
+    gap:2rem; 
+    font-size: 1.5rem;
+    list-style: none;
+}
